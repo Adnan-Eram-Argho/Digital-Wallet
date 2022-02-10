@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center capitalize mt-16">lets get some<span class="font-bold text-yellow-600">
+                money</span></h1>
+
+    </header>
+
+    <main class="container mx-auto">
+        <!-- balacne and transection -->
+        <section class="my-16">
+            <div class="grid  gap-4 text-white sm:grid-cols-1 lg:grid-cols-3 ">
+                <div class="bg-blue-400 p-8 rounded ">
+                    <h3 class="text-2xl">deposit</h3>
+                    <h2 class="text-4xl">$<span id="deposit-text"> 00</span></h2>
+                </div>
+                <div class="bg-green-300 p-8 rounded ">
+                    <h3 class="text-2xl">widthdraw</h3>
+                    <h2 class="text-4xl">$<span id="widthdraw-text"> 00</span></h2>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded ">
+                    <h3 class="text-2xl">balance</h3>
+                    <h2 class="text-4xl">$<span id="balacne-text">1240</span></h2>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- deposit and with daraw -->
+
+        <section>
+            <div class="grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
+                <div class=" mt-5 bg-blue-400 p-4">
+                    <h3 class="text-3xl text-center capitalize">please deposit</h3>
+                    <div>
+                        <div action="" class="flex-col flex">
+                            <input type="text" placeholder="your deposit"
+                                class="my-5 py-3 text-center border-2 border-stone-500 rounded" id="deposit-input">
+
+                            <button
+                                class="bg-yellow-300 w-1/4 mx-auto rounded py-2 font-bold hover:bg-yellow-400 duration-500"
+                                id="deposit-button">deposit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" mt-5 bg-green-300 p-4">
+                    <h3 class="text-3xl text-center capitalize">please withdraw</h3>
+                    <div>
+                        <div action="" class="flex-col flex">
+                            <input type="text" placeholder="your widthdraw"
+                                class="my-5 py-3 text-center border-2 border-stone-500 rounded" id="widthdraw-input">
+
+                            <button
+                                class="bg-yellow-300 w-2/4 mx-auto rounded py-2 font-bold hover:bg-yellow-400 duration-500 "
+                                id="widthdraw-button">widthdraw</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+
+
+<script src="js/bank.js"></script>
+
+</html>
